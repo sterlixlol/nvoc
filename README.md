@@ -1,9 +1,5 @@
 # NVOC - NVIDIA Overclock for Wayland
 
-<p align="center">
-  <img src="data/icons/hicolor/256x256/apps/nvoc.png" width="128" alt="NVOC Icon">
-</p>
-
 A native Wayland GPU overclocking application for NVIDIA GPUs using GTK4 and libadwaita.
 
 ## Features
