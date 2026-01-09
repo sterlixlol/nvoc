@@ -74,10 +74,6 @@ nvoc --apply-default # Apply default profile (for systemd)
 nvoc --version       # Show version
 ```
 
-## Screenshots
-
-*Coming soon*
-
 ## License
 
 MIT License - see [LICENSE](LICENSE)
