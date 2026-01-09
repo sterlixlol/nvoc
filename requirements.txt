@@ -1,0 +1,13 @@
+# NVOC - NVIDIA Overclock for Wayland
+# Python dependencies
+
+# NVIDIA Management Library Python bindings (official)
+nvidia-ml-py>=12.0.0
+
+# GTK4 bindings (installed via system package manager, not pip)
+# PyGObject>=3.44.0
+
+# Note: PyGObject should be installed via system package:
+#   Fedora/Bazzite: sudo dnf install python3-gobject gtk4 libadwaita
+#   Ubuntu/Debian:  sudo apt install python3-gi gir1.2-gtk-4.0 gir1.2-adw-1
+#   Arch Linux:     sudo pacman -S python-gobject gtk4 libadwaita

@@ -1,0 +1,24 @@
+[Unit]
+Description=Apply NVOC GPU Overclock Profile on Boot
+Documentation=https://github.com/your-username/nvoc
+After=multi-user.target display-manager.service nvidia-persistenced.service
+Wants=display-manager.service
+
+[Service]
+Type=oneshot
+User=root
+
+# Apply boot profile using helper
+ExecStart=/usr/bin/python3 -m nvoc.helper apply-boot-profile
+
+RemainAfterExit=yes
+
+# Safety: timeout after 30 seconds
+TimeoutStartSec=30
+
+# Log to journal
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,19 @@
+#!/bin/bash
+# NVOC AppImage AppRun Script
+# This script sets up the environment and launches NVOC
+
+SELF=$(readlink -f "$0")
+HERE=${SELF%/*}
+
+# Set up Python path
+export PYTHONPATH="${HERE}/usr/lib/python3/dist-packages:${PYTHONPATH}"
+export PATH="${HERE}/usr/bin:${PATH}"
+
+# GI typelib paths for GTK4/libadwaita
+export GI_TYPELIB_PATH="${HERE}/usr/lib/girepository-1.0:${GI_TYPELIB_PATH}"
+
+# XDG paths for icons
+export XDG_DATA_DIRS="${HERE}/usr/share:${XDG_DATA_DIRS}"
+
+# Launch NVOC
+exec "${HERE}/usr/bin/python3" -m nvoc.main "$@"

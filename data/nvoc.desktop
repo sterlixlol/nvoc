@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=NVOC
+Comment=NVIDIA GPU Overclocking for Wayland
+GenericName=GPU Overclock Utility
+Exec=nvoc
+Icon=nvoc
+Terminal=false
+Type=Application
+Categories=System;Settings;HardwareSettings;
+Keywords=nvidia;gpu;overclock;fan;temperature;power;
+StartupWMClass=nvoc
